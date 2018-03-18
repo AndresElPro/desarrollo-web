@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Invie - Las mejores guitarras</title>
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/invie.css">
+  </head>
+  <body>
+    <section id="portada" class="portada background">
+      <header id="header" class="header contenedor">
+        <figure class="logotipo">
+          <img src="images/invie.png" width="186" height="60" alt="Invie Logo"/>
+        </figure>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#guitarras">Guirarras</a>
+            </li>
+            <li>
+              <a href="precios.html">Precios</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="contenedor">
+        <h1 class="titulo">Guitarras <span>invie</span>sibles</h1>
+        <h2 class="title-a">Sé la estrella de rock que siempre quisiste ser</h2>
+        <a class="button" href="#guitarras">Descubrir más</a>
+      </div>
+    </section>
+    <section id="guitarras" class="guitarras contenedor">
+      <h2>Guitarras</h2>
+      <article class="guitarra">
+        <img class="derecha" src="images/invie-acustica.png" width="350" alt="Guitarra invie Acústica"/>
+        <div class="contenedor-guitarra-a">
+          <h3 class="title-b">Invie Acústica</h3>
+          <ol>
+            <li>Estilo vintage</li>
+            <li>Madera pura</li>
+            <li>Estuche inviesible de aluminio</li>
+          </ol>
+        </div>
+      </article>
+      <article class="guitarra b">
+        <img class="izquierda" src="images/invie-classic.png" width="350" alt="Guitarra invie Clásica"/>
+        <div class="contenedor-guitarra-b">
+          <h3 class="title-b">Invie Clásica</h3>
+          <ol>
+            <li>Estilo vintage</li>
+            <li>Liviana</li>
+            <li>Inicia tu camino como Rockstar</li>
+          </ol>
+        </div>
+      </article>
+    </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img src="images/invie-white.png" alt="logo blanco"/>
+          <a href="tel:+56912345678"><strong>Teléfono</strong> <span>12345678</span></a>
+          <a href="mailto:contacto@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+        </div>
+        <form class="formulario">
+          <div class="col1">
+            <label for="nombre">Nombre</label>
+            <input type="text" required id="nombre" name="nombre"/>
+            <label for="email">E-mail</label>
+            <input type="email" required id="email" name="email"/>
+            <div class="sexo">
+              <label for="mujer">
+                <input type="radio" name="sexo" id="mujer" checked/> mujer
+              </label>
+              <label for="hombre">
+                <input type="radio" name="sexo" id="hombre"/> hombre
+              </label>
+            </div>
+            <div class="intereses">
+              <label for="cotizacion">
+                <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion" checked> Cotización
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="cotizacion"> Reclamos
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
+              </label>
+              <label for="otros">
+                <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+              </label>
+            </div>
+          </div>
+          <div class="col2">
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+            <input type="submit" value="Enviar" class="button"/>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
